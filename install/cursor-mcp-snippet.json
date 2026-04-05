@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "greek-mcp": {
+      "command": "npx",
+      "args": ["-y", "greek-mcp@latest"]
+    }
+  }
+}

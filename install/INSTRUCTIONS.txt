@@ -1,0 +1,8 @@
+1) Publish greek-mcp to npm (or use your scoped name and edit the snippet).
+2) Cursor: Settings → MCP → Open JSON (or edit ~/.cursor/mcp.json).
+3) If the file is empty or only has { }, paste the whole contents of cursor-mcp-snippet.json.
+4) If you already have "mcpServers", merge only the "greek-mcp" entry inside it.
+5) Add OPENAI_API_KEY / ANTHROPIC_API_KEY in the MCP server env in Cursor (do not commit keys).
+6) Restart Cursor.
+
+If you see "extension-GitKraken: JSON syntax error", your MCP JSON is truncated or invalid — fix that file (often a missing closing } or comma) or remove the broken block.

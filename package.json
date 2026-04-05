@@ -1,10 +1,26 @@
 {
   "name": "greek-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "MCP server: improve Greek copy with OpenAI or Claude (BYOK)",
   "type": "module",
-  "private": true,
+  "bin": {
+    "greek-mcp": "./bin/greek-mcp.mjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "install"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karyofyllis/greek-mcp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "tsc -p tsconfig.json",
     "start": "bun run dist/server.js",
     "dev": "bun --watch run src/server.ts"
   },
