@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "greek": {
+      "command": "bun",
+      "args": ["run", "dist/server.js"]
+    }
+  }
+}
