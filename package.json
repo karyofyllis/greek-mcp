@@ -1,6 +1,6 @@
 {
   "name": "greek-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server: improve Greek copy with OpenAI or Claude (BYOK)",
   "type": "module",
   "bin": {
@@ -25,6 +25,7 @@
     "dev": "bun --watch run src/server.ts"
   },
   "dependencies": {
+    "@cfworker/json-schema": "^4.1.1",
     "@anthropic-ai/sdk": "^0.82.0",
     "@modelcontextprotocol/server": "^2.0.0-alpha.2",
     "openai": "^6.33.0",
